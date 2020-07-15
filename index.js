@@ -8,12 +8,13 @@
 const getInnerText = (element)=> {
     return document.querySelector(element).innerText;
 };
+
 const getUrlImg = (element) => {
 const lists = document.querySelectorAll(element);
 const arrayList =  Array.prototype.slice.call(lists);
 const newList = arrayList.filter(list => !list.ariaHidden);
 const arrayChild =  Array.prototype.slice.call(newList[0].children);
-console.log(arrayChild[1].src);
+return arrayChild[1].src
 };
 const getArrayImg = (element) => {
     const imgList = document.querySelectorAll(element);

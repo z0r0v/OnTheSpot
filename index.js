@@ -16,14 +16,19 @@ const getArrayImg = (element) => {
     return Array.prototype.slice.call(imgList)
 };
 
+const origCoast = getInnerText(".product-price").split('$')[0] + '$';
+
 console.log(
+
     "Name:", getInnerText(".product-hero h1"),'\n',
     "Coast:", getInnerText(".product-price-discounted"),'\n',
-    "Original Coast:", getInnerText(".product-prev-price"),'\n',
+    "Original Coast:", origCoast, '\n',
     "LinkImage:", getUrlImg('.fullImageContainer .img'),'\n',
+    "Array Img:", getArrayImg('.image-container .gallery-image'),
+
 );
 
-console.log("Array Img",getArrayImg('.image-container .gallery-image'));
+
 
 
 

@@ -22,7 +22,8 @@ console.log(
     "Original Coast:", getInnerText(".product-prev-price"),'\n',
     "LinkImage:", getUrlImg('.fullImageContainer .img'),'\n',
 );
-console.dir("Array Img",getArrayImg('.gallery-aside-wrapper .thumbnails .image-thumbnail button img'));
+
+console.log("Array Img",getArrayImg('.image-container .gallery-image'));
 
 
 
